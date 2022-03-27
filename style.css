@@ -11,11 +11,6 @@ navy   - #192B37
 	box-sizing: border-box;
 }
 
-/* temporary styles start  */
-
-section {
-	border: 1px solid lightgray;
-}
 
 body { 
 	font-family: 'Catamaran', sans-serif;
@@ -107,6 +102,16 @@ p {
 	margin-bottom: 1rem;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+a:hover {
+	color: #FFBE00;
+}
+
 h2:last-child, 
 h3:last-child, 
 h4:last-child,
@@ -120,7 +125,23 @@ p:last-child {
 .text-white		{ color: white;    }
 
 .text-sm 		{ font-size: 1.5rem; }
+.text-md { 
+	font-size: 2rem;  
+	line-height: 1.1;
+}
 .text-lg 		{ font-size: 4.5rem; }
+
+.subtitle { 
+	font-size: 1.2rem;
+	color: rgb(120,120,125);
+}
+
+.quote-icon {
+	font-size: 6rem;
+	display: inline-block;
+	color: rgb(120,120,125);
+	line-height: 1;
+}
 
 .font-weight-light		{ font-weight: 200; }
 .font-weight-normal		{ font-weight: 400; }
@@ -150,7 +171,7 @@ p:last-child {
 
 
 
-/* header styles */
+/* header and footer styles */
 
 header {
 	background-image: url('/images/the-sleep-co-4.jpg');
@@ -163,6 +184,10 @@ header h3 {
 	font-size: 5.5rem;
 	line-height: 0.9; 
 	margin-bottom: 0;
+}
+
+footer a {
+	border: none;
 }
 
 /* background images */
