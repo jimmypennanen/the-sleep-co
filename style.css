@@ -1,3 +1,9 @@
+/*
+colors:
+yellow - #FFBE00
+navy   - #192B37
+ */
+
 
 * {
 	padding: 0;
@@ -7,15 +13,15 @@
 
 /* temporary styles start  */
 
-* {
-	padding: 0.5rem;
+section {
 	border: 1px solid lightgray;
 }
 
-body { border: none }
-html { border: none }
+body { 
+	font-family: 'Catamaran', sans-serif;
+	color: #192B37;
+}
 
-/*  temporary styles end */
 
 /* Padding Utility Classes */ 
 
@@ -75,16 +81,29 @@ html { border: none }
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+/*  minimum height classes  */
+
+.tall-50 		{ min-height: 50vh;  }
+.tall-60 		{ min-height: 60vh;  }
+.tall-70 		{ min-height: 70vh;  }
+.tall-80 		{ min-height: 80vh;  }
+.tall-90 		{ min-height: 90vh;  }
+.tall-100 		{ min-height: 100vh; }
+
+
 
 /* universal typography */
 
 h2, h3, h4, h5, h6 {
 	line-height: 1.1;
-	margin-bottom: 1.2rem;
+	margin-bottom: 1rem;
 }
 
+h2 { font-size: 2.5rem;}
+
 p {
-	line-height: 1.4; 
+	font-weight: 200;
+	line-height: 1.5; 
 	margin-bottom: 1rem;
 }
 
@@ -97,9 +116,77 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+.text-feat 		{ color: #FFBE00;  }
+.text-white		{ color: white;    }
+
+.text-sm 		{ font-size: 1.5rem; }
+.text-lg 		{ font-size: 4.5rem; }
+
+.font-weight-light		{ font-weight: 200; }
+.font-weight-normal		{ font-weight: 400; }
+.font-weight-extra-bold	{ font-weight: 800; }
+
+
+.text-left 		{ text-align: left;   }
+.text-center 	{ text-align: center; }
+.text-right 	{ text-align: right;  }
+
 /*  image styles  */
 
 .bg-image {
 	background-image: url('/images/the-sleep-co-1.jpg');
 	background-size: cover;
+}
+
+/* universal styles and utility classes */
+
+.bg-dark { 
+	background-color: #192B37;
+	color: white;
+}
+
+
+
+
+
+
+/* header styles */
+
+header {
+	background-image: url('/images/the-sleep-co-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+header h3 {
+	font-size: 5.5rem;
+	line-height: 0.9; 
+	margin-bottom: 0;
+}
+
+/* background images */
+
+.bg-bed {
+	background-image: url('/images/the-sleep-co-3.jpg');
+	background-position: 50% 50%;
+}
+
+.bg-pug {
+	background-image: url('/images/the-sleep-co-1.jpg');
+	background-position: 50% 35%;
+}
+
+.bg-pillow {
+		background-image: url('/images/the-sleep-co-2.jpg');
+		background-position: 50% 57%;
+}	
+
+/* icon grid */
+
+.fa-solid {
+	display: block;
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 3rem;
 }

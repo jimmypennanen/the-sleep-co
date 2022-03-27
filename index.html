@@ -11,7 +11,10 @@
 		<!-------  fontawsome stylesheet ------->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     	
-    	<!------- This is our Google Fonts ------->
+    	<!------- Google Fonts - catamaran (200,400,500,800) ------->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
     	
     	<!------- This is our main stylesheet, this always goes last-------> 
     	<link rel="stylesheet" href="/style.css"> 
@@ -19,52 +22,55 @@
 	</head>
 	<body>
 
-		<!---------- opening section banner ---------->
-		<header class="grid padded text-dark bg-image">
-			<h3 class="col-12"> <span class="text-yellow"> sleep </span> like a baby </h3>
-			<h1 class="col-12"> the ultimate mattress solution </h1>
+		<!---------- opening section header ---------->
+		<header class="padded-md grid text-center tall-100">
+			<div class="col-12-middle">
+				<h3 class="font-weight-extra-bold"> <span class="text-feat"> sleep </span> like a baby </h3>
+				<h1 class="font-weight-light"> the ultimate mattress solution </h1>
+			</div>
 		</header>
 
 		<!----------  about/image section ---------->
-		<section class="grid text-dark">
-			<div class="col-6 padded">
-				<h2>built to last a <span class="text-yellow"> lifetime </span> 
+		<section class="grid">
+			<div class="col-6-middle padded-md">
+				<h2>built to last a <span class="text-feat"> lifetime </span> 
 				</h2>
 				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui quod dignissimos a maxime consequuntur, odit molestiae aspernatur tenetur ullam error rerum, facere unde fugit nihil ipsum hic sit exercitationem.</p>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam architecto esse culpa ipsa ad recusandae quae iste ab reiciendis magni animi voluptatem, sint dolorem at deleniti doloremque expedita nihil. Doloribus? </p>
 			</div>
-			<div class="col-6 bg-image">
-				<!-- image soon -->
+			<div class="col-6 bg-image bg-bed tall-70 ">
+				
 			</div>
-			<div class="col-6 bg-image">
-				<!-- image soon -->
+			<div class="col-6 bg-image bg-pug tall-70">
+				
 			</div>
-			<div class="col-6 padded">
-				<h2> so <span class="text-yellow"> soft </span> you'll melt 
+			<div class="col-6-middle padded-md">
+				<h2> so <span class="text-feat"> soft </span> you'll melt 
 				</h2>
-				<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quo cupiditate ab ipsum! Provident qui quas saepe totam sapiente soluta sint eum praesentium! Cumque asperiores dolorem at perspiciatis distinctio. Labore! </p>
+				<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quo cupiditate ab ipsum! Provident qui quas saepe totam sapiente soluta sint eum praesentium! Cumque asperiores dolorem at perspiciatis distinctio. Labore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae odit neque rerum modi expedita eaque quia eligendi itaque laborum ipsa est veritatis. </p>
 			</div>
 		</section>
 
-		<!----------  feature section dark ---------->
-		<section class="grid padded text-light">
-			<div class="col-12">
-				<h2> <span class="text-yellow"> features </span> you will love
+		<!----------  feature icon section dark ---------->
+		<section class="grid padded-md bg-dark">
+			<div class="padded-sm col-12 text-center">
+				<h2> <span class="text-feat"> features </span> you will love
 				</h2>
 			</div>
-			<div class="col-3">
+			<div class="padded-sm col-3">
 				<i class="fa-solid fa-cloud"></i>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem asperiores quis quos quae voluptas nostrum amet laborum assumenda, delectus alias blanditiis cum dolor expedita corporis incidunt qui suscipit. Quibusdam? </p>
 			</div>
-			<div class="col-3">
+			<div class="padded-sm col-3">
 				<i class="fa-solid fa-cloud"></i>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptates deleniti soluta ullam, atque quidem aspernatur earum. Porro doloremque aut cum, asperiores molestias saepe pariatur numquam, earum beatae, maiores distinctio. </p>
 			</div>
-			<div class="col-3">
+			<div class="padded-sm col-3">
 				<i class="fa-solid fa-cloud"></i>
 				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt quo vitae natus at officia quidem asperiores hic eveniet iure, autem obcaecati voluptatem vero. Tenetur nemo adipisci praesentium blanditiis labore? 
 				</p>
 			</div>
-			<div class="col-3">
+			<div class="padded-sm col-3">
 				<i class="fa-solid fa-cloud"></i>
 				<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae inventore maiores error nesciunt sit culpa, et necessitatibus numquam tenetur ex fugiat nisi reprehenderit ut assumenda blanditiis aperiam eos? Ipsum, dolorem.
 				</p>
@@ -72,27 +78,41 @@
 		</section>
 
 		<!----------  banner section yellow ---------->		
-		<section class="grid bg-image">
-			<h3> never underestimate the power of a good night sleep </h3>
+		<section class="padded-md bg-image bg-pillow text-center tall-70 grid">
+			<div class="col-12-middle"> 
+				<h3 class="text-lg"> 
+					<span class="text-sm font-weight-normal">never underestimate the power of </span>
+				 	<br> a good night <span class="text-white"> sleep </span> 
+				</h3>
+			</div>
 		</section>
 
 		<!----------  quot section white ---------->
-		<section>
-			<div>
+		<section class="padded-md grid text-center">
+			<div class="col-1 text-right">
 				<span>"</span>
 			</div>
-			<div>
+			<div class="col-10">
 				<p> I've never experienced sleep like this. OMG i really love this mattress I want to buy one for every member of my family </p>
 				<p> - A very happy customer </p>
 			</div>
-			<div>
+			<div class="col-1 text-left">
 				<span>"</span>
 			</div>
 		</section>	
 
 		<!---------- footer ---------->
-		<footer>
-
+		<footer class="padded-md bg-dark grid-spaceBetween">
+			<div class="col-4">
+				<h2> let's <span class="text-feat"> connect </span> </h2>
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum! Nesciunt facilis, odit dolores rem rerum repellendus, magni ab maiores beatae laborum iusto ducimus error! Nobis aut eaque mollitia vel? </p>
+			</div>
+			<div class="col-6">
+				<p> Call: 45498199 </p>
+				<p> Email: thesleep@gmail.com </p>
+				<p> Store: 55 Pertti Penguin st. Oslo </p>
+				<p> Instagram: @thesleep </p>
+			</div>
 		</footer>
 
 
