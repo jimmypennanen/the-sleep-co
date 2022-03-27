@@ -12,7 +12,8 @@
 	border: 1px solid lightgray;
 }
 
-
+body { border: none }
+html { border: none }
 
 /*  temporary styles end */
 
@@ -96,3 +97,9 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+/*  image styles  */
+
+.bg-image {
+	background-image: url('/images/the-sleep-co-1.jpg');
+	background-size: cover;
+}
