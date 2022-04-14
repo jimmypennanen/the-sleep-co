@@ -109,7 +109,7 @@ a {
 }
 
 a:hover {
-	color: #FFBE00;
+	color: #006400;
 }
 
 h2:last-child, 
@@ -121,7 +121,7 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-.text-feat 		{ color: #FFBE00;  }
+.text-feat 		{ color: #006400;  }
 .text-white		{ color: white;    }
 
 .text-sm 		{ font-size: 1.5rem; }
@@ -216,6 +216,11 @@ footer a {
 	border: none;
 }
 
+.fa-brands {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2%;
+}
 
 
 /* background images */
@@ -235,8 +240,23 @@ footer a {
 		background-position: 50% 57%;
 }	
 
-/* icon grid */
+.bg-cat {
+	background-image: url('/images/the-sleep-co-5.jpg');
+	background-position: 50% 50%;
+}
 
+.bg-coala {
+	background-image: url('/images/the-sleep-co-6.jpg');
+	background-position: 50% 20%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: grayscale(90%);
+}
+
+
+
+/* icon grid */
+.fa-regular,
 .fa-solid {
 	display: block;
 	text-align: center;
