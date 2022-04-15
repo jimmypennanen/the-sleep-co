@@ -1,9 +1,3 @@
-/*
-colors:
-yellow - #FFBE00
-navy   - #192B37
- */
-
 
 * {
 	padding: 0;
@@ -25,13 +19,13 @@ body {
 .padded-lg { padding: 10%;  }
 
 .padded-05 { padding: 0.5rem; }
-.padded-1 { padding: 1rem; }
-.padded-2 { padding: 2rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
 
-.padded-t { padding-top: 5%; }
-.padded-b { padding-bottom: 5%; }
-.padded-l { padding-left: 5%; }
-.padded-r { padding-right: 5%; }
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-right: 5%; }
 
 .padded-tb { padding-top: 5%; padding-bottom: 5%; }
 .padded-lr { padding-left: 5%; padding-right: 5%; }
@@ -95,6 +89,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 { font-size: 2.5rem;}
+h3 { font-size: 1.5rem;  }
 
 p {
 	font-weight: 200;
@@ -121,15 +116,25 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+li {
+padding-left: 1rem;
+}
+
 .text-feat 		{ color: #006400;  }
 .text-white		{ color: white;    }
 
-.text-sm 		{ font-size: 1.5rem; }
+.text-sm { 
+	font-size: 1.5rem; 
+}
+
 .text-md { 
 	font-size: 2rem;  
 	line-height: 1.1;
 }
-.text-lg 		{ font-size: 4.5rem; }
+
+.text-lg { 
+	font-size: 4.5rem; 
+}
 
 .subtitle { 
 	font-size: 1.2rem;
@@ -167,10 +172,6 @@ p:last-child {
 }
 
 
-
-
-
-
 /* header and footer styles */
 
 header a {
@@ -187,7 +188,6 @@ header a {
   
   header {
 	padding: 2% 5%;
-	/* border: 1px solid grey; */
 	text-align: center;
   }
   
@@ -216,11 +216,6 @@ footer a {
 	border: none;
 }
 
-.fa-brands {
-	font-size: 2rem;
-	text-align: center;
-	padding: 2%;
-}
 
 
 /* background images */
@@ -245,7 +240,7 @@ footer a {
 	background-position: 50% 50%;
 }
 
-.bg-coala {
+.bg-koala {
 	background-image: url('/images/the-sleep-co-6.jpg');
 	background-position: 50% 20%;
 	background-size: cover;
@@ -253,6 +248,19 @@ footer a {
 	filter: grayscale(90%);
 }
 
+.bg-bed-2 {
+	background-image: url('/images/the-sleep-co-7.jpg');
+	background-position: 50% 60%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg-map {
+	background-image: url('/images/the-sleep-co-8.png');
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 
 /* icon grid */
@@ -263,3 +271,49 @@ footer a {
 	margin-bottom: 2rem;
 	font-size: 3rem;
 }
+
+.fa-brands {
+	font-size: 2rem;
+	text-align: center;
+	padding: 2%;
+}
+
+/* contact form */
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.form-style-two input,
+.form-style-two textarea {
+  border: 2px solid #f8edeb;
+  background-color: #f8edeb;
+}
+
+.form-style-two label {
+  color: #159234;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-style-two button {
+  border: 2px solid #159234;
+  background-color: white;
+  color: #159234;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.form-style-two input:focus,
+.form-style-two textarea:focus {
+  border-color: #159234 ;
+} 
+
