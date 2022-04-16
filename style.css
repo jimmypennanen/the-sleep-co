@@ -177,6 +177,8 @@ header a {
 	text-align: center;
   }
   
+  .show-link { display: none; }
+
   .logo h2 {
 	font-size: 3rem;
 	font-weight: normal;
@@ -328,6 +330,8 @@ form textarea {
   
   .show-md { display: block; }
   .hide-md { display: none;  }
+  
+  .text-md-left { text-align: left;} 
 
   .md-tall-70 { min-height: 70vh; }
   
@@ -386,6 +390,21 @@ form textarea {
   h2 { font-size: 2rem; }
 }
 
+/* ------- custom header link Media Query (40em / 640px) NOT part of default Gridlex styling--------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+@media (max-width: 40em) {
+
+	.hide-link { display: none; }
+	.show-link { display: inline-block; }
+
+	[class*=grid] .logo-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
 /* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
 /* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
 
@@ -398,3 +417,4 @@ form textarea {
         max-width: 100%;
     }
 }
+
