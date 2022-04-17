@@ -368,6 +368,8 @@ form textarea {
   .sm-margin-l-0 { margin-left: 0; }
   .sm-margin-r-0 { margin-right: 0; }
 
+  .flex-flip-sm   { flex-direction: column-reverse;}
+
   .logo h2 { font-size: 1.7rem; } 
 
   .opening-section h3 { font-size: 11vw; }
