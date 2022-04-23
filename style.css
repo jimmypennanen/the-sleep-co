@@ -205,9 +205,8 @@ footer a {
 }
 
 
-
-
 /* background and backgroundimage styles  */
+
 
 .bg-dark { 
 	background-color: #192B37;
@@ -322,7 +321,7 @@ form textarea {
 }
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+/* - Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */ 
 
 @media (max-width: 64em) {
 
@@ -343,7 +342,7 @@ form textarea {
 
 @media (max-width: 48em) {
 
-	body { border: 2px solid blue; padding: 0.5rem}
+  body  { border: 2px solid blue; padding: 0.5rem}
   html  { font-size: 14px; }
   p		{ font-size: 1.1rem; }
 
@@ -393,7 +392,7 @@ form textarea {
 }
 
 /* ------- custom header link Media Query (40em / 640px) NOT part of default Gridlex styling--------------- */ 
-/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+/* - Styles added here will apply at devices smaller than 640px, or zoomed in equivalent */ 
 @media (max-width: 40em) {
 
 	.hide-link { display: none; }
