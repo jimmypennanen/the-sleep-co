@@ -1,8 +1,55 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+	<head>
 
-		<!---------- opening section section ---------->
+
+		<!-- viewport meta for responsive site -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    	<!-- Title of the page -->
+    	<title> The Sleep Co </title>
+    	
+    	<!------- This is our Gridlex stylesheet ------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+		<!-------  fontawsome stylesheet ------->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    	
+    	<!------- Google Fonts - catamaran (200,400,500,800) ------->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
+    	
+    	<!------- This is our main stylesheet, this always goes last-------> 
+    	<link rel="stylesheet" href="/style.css"> 
+
+	</head>
+	<body>
+        <header class="grid-middle">
+			<nav class="col-3 text-right hide-link">
+			  <a href="/index.html">Home</a>
+			  <a href="/about.html">About</a>
+			</nav>
+			<div class="col-6-center logo-stack">
+			  <a href="#" class="logo text-feat text-center">
+				<h2>The Sleep Co</h2>
+			  </a>
+			</div>
+			 <nav class="col-3 text-left hide-link">
+			  <a href="/services.html">Services</a>
+			  <a href="/contact.html">Contact</a>
+			</nav>
+			<nav class="col-12 show-link">
+				
+				<a href="/index.html">Home</a>
+				<a href="/about.html">About</a>
+				<a href="/services.html">Services</a>
+				<a href="/contact.html">Contact</a>
+			  </nav>
+		  </header>
+
+
+        		<!---------- opening section section ---------->
 		<section class="padded-md grid text-center tall-60 opening-section">
 			<div class="col-12-middle">
 				<h3 class="font-weight-extra-bold"> Founded in <span class="text-feat"> 1905 </span></h3>
@@ -50,3 +97,23 @@ layout: default
 		<!---------- Ecofriendly banner ---------->
 		<section class="padded-md text-center bg-image bg-koala tall-70 grid koala"> 
 		</section>
+
+
+
+    		<!---------- footer ---------->
+		<footer class="padded-md bg-dark grid-spaceBetween">
+			<div class="col-12-middle text-center">
+				<h2> let's <br> <span class="text-feat"> connect </span> </h2>
+			</div>
+			<div class="col-12-bottom text-center">
+				<nav>
+					<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				</nav>
+			</div>
+		</footer>
+
+      	
+	</body>
+</html>
