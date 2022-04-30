@@ -19,14 +19,14 @@ feat:
 			</div>
 		</section>
 
-						<!----------  feature icon section dark ---------->
+		<!----------  feature icon section dark ---------->
 		<section class="grid-center padded-md bg-dark">
 			<div class="padded-sm col-12 text-center">
 				<h2> <span class="text-feat"> features </span> you will love
 				</h2>
 			</div>
 				
-			{ % for item in page.feat % }
+			{% for item in page.feat %}
 			
 			<div class="padded-sm col-3_sm-6 xxs-stack">
 				<i class="{{item.icon}}"> </i>
@@ -36,6 +36,11 @@ feat:
 			{% endfor %}
 						
 		</section>
+
+		<!---------- Ecofriendly banner ---------->
+		<section class="padded-md text-center bg-image bg-koala tall-80 grid koala fixed"> 
+		</section>
+		
 
 		<!---------- about section section ---------->
 		<section class="grid flex-flip-sm">
@@ -50,22 +55,3 @@ feat:
 			</div>	
 		</section>
 
-				<!----------  feature icon section dark ---------->
-		<section class="grid-center padded-md bg-dark">
-			<div class="padded-sm col-12 text-center">
-				<h2> <span class="text-feat"> features </span> you will love
-				</h2>
-			</div>
-
-			{% for item in page.feat %}
-			<div class="padded-sm col-3_sm-6 xxs-stack">
-				<i class="{{item.icon}}"></i>
-				<p> {{item.description}} </p>
-			</div>
-			{% endfor %}
-		
-		</section>
-
-		<!---------- Ecofriendly banner ---------->
-		<section class="padded-md text-center bg-image bg-koala tall-80 grid koala fixed"> 
-		</section>
