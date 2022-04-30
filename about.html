@@ -1,5 +1,14 @@
 ---
 layout: default
+feat:
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem asperiores quis quos quae voluptas nostrum amet laborum assumenda, delectus alias blanditiis cum dolor expedita corporis incidunt qui suscipit. Quibusdam? 
+ - icon: fa-solid fa-bed
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem asperiores quis quos quae voluptas nostrum amet laborum assumenda, delectus alias blanditiis cum dolor expedita corporis incidunt qui suscipit. Quibusdam? 
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem asperiores quis quos quae voluptas nostrum amet laborum assumenda, delectus alias blanditiis cum dolor expedita corporis incidunt qui suscipit. Quibusdam? 
+ - icon: fa-solid fa-bed
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem asperiores quis quos quae voluptas nostrum amet laborum assumenda, delectus alias blanditiis cum dolor expedita corporis incidunt qui suscipit. Quibusdam? 
 ---
 
 		<!---------- opening section section ---------->
@@ -8,6 +17,24 @@ layout: default
 				<h3 class="font-weight-extra-bold"> Founded in <span class="text-feat"> 1905 </span></h3>
 				<h1 class="font-weight-light">  New York City  </h1>
 			</div>
+		</section>
+
+						<!----------  feature icon section dark ---------->
+		<section class="grid-center padded-md bg-dark">
+			<div class="padded-sm col-12 text-center">
+				<h2> <span class="text-feat"> features </span> you will love
+				</h2>
+			</div>
+				
+			{ % for item in page.feat % }
+			
+			ß<div class="padded-sm col-3_sm-6 xxs-stack">
+				<i class="{{item.icon}}"> </i>
+				<p> {{item.description}} </p>
+			</div>
+			
+			{% endfor %}
+						
 		</section>
 
 		<!---------- about section section ---------->
@@ -24,29 +51,21 @@ layout: default
 		</section>
 
 				<!----------  feature icon section dark ---------->
-		<section class="grid padded-md bg-dark">
+		<section class="grid-center padded-md bg-dark">
 			<div class="padded-sm col-12 text-center">
 				<h2> <span class="text-feat"> features </span> you will love
 				</h2>
 			</div>
+
+			{% for item in page.feat %}
 			<div class="padded-sm col-3_sm-6 xxs-stack">
-				<i class="fa-solid fa-cloud"></i>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem asperiores quis quos quae voluptas nostrum amet laborum assumenda, delectus alias blanditiis cum dolor expedita corporis incidunt qui suscipit. Quibusdam? </p>
+				<i class="{{item.icon}}"></i>
+				<p> {{item.description}} </p>
 			</div>
-			<div class="padded-sm col-3_sm-6 xxs-stack">
-				<i class="fa-solid fa-bed"></i>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptates deleniti soluta ullam, atque quidem aspernatur earum. Porro doloremque aut cum, asperiores molestias saepe pariatur numquam, earum beatae, maiores distinctio. </p>
-			</div>
-			<div class="padded-sm col-3_sm-6 xxs-stack">
-				<i class="fa-solid fa-cloud"></i>
-				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt quo vitae natus at officia quidem asperiores hic eveniet iure, autem obcaecati voluptatem vero. Tenetur nemo adipisci praesentium blanditiis labore? </p>
-			</div>
-			<div class="padded-sm col-3_sm-6 xxs-stack">
-				<i class="fa-solid fa-bed"></i>
-				<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae inventore maiores error nesciunt sit culpa, et necessitatibus numquam tenetur ex fugiat nisi reprehenderit ut assumenda blanditiis aperiam eos? Ipsum, dolorem. </p>
-			</div>
+			{% endfor %}
+		
 		</section>
 
 		<!---------- Ecofriendly banner ---------->
-		<section class="padded-md text-center bg-image bg-koala tall-70 grid koala"> 
+		<section class="padded-md text-center bg-image bg-koala tall-80 grid koala fixed"> 
 		</section>

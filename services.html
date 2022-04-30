@@ -1,54 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-
-		<!-- viewport meta for responsive site -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    	<!-- Title of the page -->
-    	<title> The Sleep Co sercies </title>
-    	
-    	<!------- This is our Gridlex stylesheet ------->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-		<!-------  fontawsome stylesheet ------->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    	
-    	<!------- Google Fonts - catamaran (200,400,500,800) ------->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
-    	
-    	<!------- This is our main stylesheet, this always goes last-------> 
-    	<link rel="stylesheet" href="/style.css"> 
-
-	</head>
-	<body>
-
-		<!---------- header ---------->
-		<header class="grid-middle">
-			<nav class="col-3 text-right hide-link">
-				<a href="/index.html">Home</a>
-				<a href="/about.html">About</a>
-			</nav>
-				<div class="col-6-center logo-stack">
-				  <a href="#" class="logo text-feat text-center">
-					<h2>The Sleep Co</h2>
-				  </a>
-				</div>
-			<nav class="col-3 text-left hide-link">
-				<a href="/services.html">Services</a>
-				<a href="/contact.html">Contact</a>
-			</nav>
-			<nav class="col-12 show-link">
-				<a href="/index.html">Home</a>
-				<a href="/about.html">About</a>
-				<a href="/services.html">Services</a>
-				<a href="/contact.html">Contact</a>
-			</nav>
-		 </header>
-
-
+---
+layout: default
+---
 
 		<!---------- opening section section ---------->
 		<section class="padded-md grid text-center tall-60 opening-section">
@@ -142,35 +94,3 @@
 			</div>
 		</section>
 
-
-		<!---------- footer ---------->
-		<footer class="padded-md bg-dark grid-spaceBetween">
-			<div class="col-12-middle text-center">
-				<h2> let's <br> <span class="text-feat"> connect </span> </h2>
-			</div>
-			<div class="col-12-bottom text-center">
-				<nav>
-					<a href="#"><i class="fa-brands fa-facebook"></i></a>
-					<a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-					<a href="#"><i class="fa-brands fa-twitter"></i></a>
-				</nav>
-			</div>
-		</footer>
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+4745498199", // WhatsApp number
-            call_to_action: "Message us", // Call to action
-            button_color: "#FF6550", // Color of button
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
-	</body>
-</html>

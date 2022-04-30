@@ -207,6 +207,10 @@ footer a {
 
 /* background and backgroundimage styles  */
 
+.fixed {
+	background-attachment: fixed;
+  }
+
 
 .bg-dark { 
 	background-color: #192B37;
@@ -245,7 +249,8 @@ footer a {
 	background-image: url('/images/the-sleep-co-6.jpg');
 	background-position: 50% 20%;
 	filter: grayscale(90%);
-	background-size: 100%;
+	background-size: cover;
+
 }
 
 .bg-bed-2 {
