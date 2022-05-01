@@ -215,7 +215,7 @@ footer a {
 	z-index: 1;
 }
 
-.hamburger-button i {
+.hamburger-button {
 	color: #006400;
 	position: relative;
 	z-index: 2;
