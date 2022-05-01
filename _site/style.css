@@ -204,6 +204,40 @@ footer a {
 	border: none;
 }
 
+/* mobile menu styles */
+
+.mobile-menu {
+	position: fixed;
+	top: 12%;
+	bottom: 0;
+	left: 50%;
+	right: 0;
+	z-index: 1;
+}
+
+.hamburger-button i {
+	color: #006400;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 1rem;
+}
+
+.hamburger-button i {
+	font-size: 2.3rem;
+}
+
+.mobile-menu a {
+	display: block;
+	font-size: 1.5rem;
+	padding: 0.6rem;
+	padding-left: 2rem;
+	padding-top: 2rem; 
+	border: none;
+}
+
+.mobile-menu a:hover {
+	color: #192B37
+}
 
 /* background and backgroundimage styles  */
 
@@ -214,6 +248,11 @@ footer a {
 
 .bg-dark { 
 	background-color: #192B37;
+	color: white;
+ }
+
+ .bg-feat { 
+	background-color: #006400;;
 	color: white;
  }
 
@@ -322,7 +361,8 @@ form textarea {
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 
@@ -405,8 +445,13 @@ form textarea {
 	.show-link { display: inline-block; }
 
 	[class*=grid] .logo-stack {
-        flex-basis: 100%;
-        max-width: 100%;
+        flex-basis: 90%;
+        max-width: 90%;
+    }
+
+	[class*=grid] .logo-stack-2 {
+        flex-basis: 10%;
+        max-width: 10%;
     }
 
 }

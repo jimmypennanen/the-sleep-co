@@ -19,6 +19,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
+
+		<!------- animate on scroll css-------> 
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     	
     	<!------- This is our main stylesheet, this always goes last-------> 
     	<link rel="stylesheet" href="/style.css"> 
@@ -39,21 +42,26 @@
 			  <a href="/services.html">Services</a>
 			  <a href="/contact.html">Contact</a>
 			</nav>
-			<nav class="col-12 show-link">
-				
-				<a href="/index.html">Home</a>
-				<a href="/about.html">About</a>
-				<a href="/services.html">Services</a>
-				<a href="/contact.html">Contact</a>
-			  </nav>
-		  </header>
+            <div class="show-link logo-stack-2">
+                <div class="hamburger-button">
+                     <i class="fa-solid fa-burger"></i> 
+                </div>    
+             </div>
 
+	    </header>
+
+        <nav class="mobile-menu padded bg-feat text-center">
+            <a href="/index.html" class="margin-t-2">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/services.html">Services</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
 
         		<!---------- opening section section ---------->
 		<section class="padded-md grid text-center tall-60 opening-section">
 			<div class="col-12-middle">
-				<h3 class="font-weight-extra-bold"> We are here to  <span class="text-feat"> help</span> you </h3>
-				<h1 class="font-weight-light"> get the sleep you deserve </h1>
+				<h3 class="font-weight-extra-bold" data-aos="fade-down-left" data-aos-duration="1500"> We are here to  <span class="text-feat"> help</span> you </h3>
+				<h1 class="font-weight-light" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500"> get the sleep you deserve </h1>
 			</div>
 		</section>
 
@@ -157,6 +165,18 @@
 				</nav>
 			</div>
 		</footer>
+
+
+<!---------- jQuary script -------->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">    
+ </script>
+
+<!----- animate on scroll java  ----->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!---------- custom java script file -------->
+<script src="/scripts.js"></script>
+
 <!-- GetButton.io widget -->
 <script type="text/javascript">
     (function () {
@@ -174,5 +194,7 @@
 </script>
 <!-- /GetButton.io widget -->
       	
-	</body>
+
+
+</body>
 </html>
