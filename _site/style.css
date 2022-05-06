@@ -325,8 +325,20 @@ footer a {
 /* image gallery */
 .gallery [class*="col-"] {
 	padding: 0.5%;
-  }
+}
 
+.gallery .gallery-item {
+	  border-bottom: none;
+}
+
+  /* Background of gallery when active  */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
 
 /* icon grid */
 .fa-regular,

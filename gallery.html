@@ -1,5 +1,7 @@
 ---
 layout: default
+popup-gallery: false
+gallery-background: bg-dark
 gallery:
  - column-size: col-12
    aspect-ratio: landscape-wide
@@ -20,6 +22,8 @@ gallery:
    aspect-ratio: portrait 
    background_image: /images/the-sleep-co-7.jpg
 ---
+
+
 <section class="padded-md grid text-center tall-60 opening-section">
     <div class="col-12-middle">
         <h3 class="font-weight-extra-bold" data-aos="fade-down" data-aos-duration="1500"> Explore our magical <span class="text-feat"> world </span> of mattresses</h3>
@@ -27,7 +31,31 @@ gallery:
     </div>
 </section>
 
-<section class="padded-md">
+{% if page.popup-gallery == true %}
+
+<!-- popup gallery -->
+<section class="padded-md
+ {{ page.gallery-background }} ">
+
+    <h2> Popup Gallery </h2>
+    <div class="grid gallery" id="lightgallery"> 
+
+        {% for item in page.gallery %}
+
+        <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+            <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"></div>
+        </a>
+
+        {% endfor %}
+
+    </div>      
+</section>
+
+{% else %}
+
+<!-- standard gallery -->
+<section class="padded-md"> 
+    <h2> Standard Gallery </h2>
     <div class="grid gallery"> 
 
         {% for item in page.gallery %}
@@ -40,3 +68,7 @@ gallery:
 
     </div>      
 </section>
+
+{% endif %}
+
+

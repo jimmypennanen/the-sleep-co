@@ -15,3 +15,9 @@ $( document ).ready(function() {
       AOS.init();
 
 });
+
+
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false
+});
