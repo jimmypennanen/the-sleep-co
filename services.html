@@ -1,62 +1,82 @@
 ---
 layout: default
-products:
- - title: matresses
-   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
-   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
-   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
-   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
-   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
- - title: bed frames
-   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
-products2: 
- - title2: pillows
-   description2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
- - title2: sheets
-   description2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
- - title2: pyjamas
-   description2: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus. 
+products-1:
+ - title-1: matresses
+   description-list-1:
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+   - Doloremque a velit praesentium rem dolorum aut qui, perspiciatis alias beatae corrupti quo eos corporis.
+   - Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, minima dolor.
+   - Voluptate quidem eaque praesentium temporibus, fugiat facilis eius corporis cum eum, facere impedit iusto velit vero!
+   - Ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam molestias fugit maxime veniam.  
+ - title-1: bed frames
+   description-list-1: 
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+products-2:
+ - title-2: pillows
+   description-list-2: 
+   - Similique fugit reprehenderit consequatur impedit laborum pariatur quod natus perferendis sed.
+   - Modi, ex ab itaque qui culpa quisquam facilis cumque rem quibusdam ut sit fugit perspiciatis quas.
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam.
+ - title-2: sheets
+   description-list-2: 
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+ - title-2: pyjamas
+   description-list-2: 
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
+   - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus.
 ---
 
 		<!---------- opening section section ---------->
-		<section class="padded-md grid text-center tall-60 opening-section">
-			<div class="col-12-middle">
-				<h3 class="font-weight-extra-bold" data-aos="fade-down-left" data-aos-duration="1500"> We are here to  <span class="text-feat"> help</span> you </h3>
-				<h1 class="font-weight-light" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500"> get the sleep you deserve </h1>
-			</div>
-		</section>
-
-
+	<section class="padded-md grid text-center tall-60 opening-section">
+		<div class="col-12-middle">
+			<h3 class="font-weight-extra-bold" data-aos="fade-down-left" data-aos-duration="1500"> We are here to  <span class="text-feat"> help</span> you </h3>
+			<h1 class="font-weight-light" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500"> get the sleep you deserve </h1>
+		</div>
+	</section>
+ 
 		<!---------- service section ---------->
 
 	 <section class="padded padded-t grid-center bg-dark">
-            <div class="col-12 center">
-                <h2 class="text-center"> what we do, what we know. </h2>
-            </div>
+        <div class="col-12 center">
+             <h2 class="text-center"> what we do, what we know. </h2>
+         </div>
 		<!-- ----------------------------------- first column forloop ------------------------------------>
-			<!-- {% for item in page.products %}
-		<div class="col-5_lg-6_sm-12 padded-2">
-			<h3 class="text-feat"> {{item.title}} </h3>
-			<div class="grid">
-					<div class="col-10">
-						<p> {{item.description}} </p>
-					</div> 
-			</div>
-		</div>
-			{% endfor %} -->
-		<!------------------------------------ second column forloop------------------------------------>
-			<!-- {% for item in page.products2 %}
-			<div class="col-5_lg-6_sm-12 padded-2">
-				<h3 class="text-feat"> {{item.title2}} </h3>
+		<div class="col-5_lg-6_sm-12">
+		{% for item in page.products-1 %}
+			<div class="padded-2">	
+				<h3 class="text-feat"> {{item.title-1}} </h3>
 				<div class="grid">
+				{% for description in item.description-list-1 %}
 					<div class="col-10">
-						<p> {{item.description2}} </p>
-					</div>
+						<p> {{description}} </p>
+					</div> 
+				{% endfor %}
 				</div>
 			</div>
-			{% endfor %} -->
+		{% endfor %}
+		</div>
+		<!------------------------------------ second column forloop------------------------------------>
+		<div class="col-5_lg-6_sm-12">
+		{% for item in page.products-2 %}
+			<div class="padded-2">
+				<h3 class="text-feat"> {{item.title-2}} </h3>
+				<div class="grid">
+				{% for description in item.description-list-2 %}
+					<div class="col-10">
+						<p> {{description}} </p>
+					</div> 
+				{% endfor %}
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+	</section>
 		<!-- ----------------------------------- first column regular ------------------------------------>
-		<div class="col-5_lg-6_sm-12 padded-2">
+		<!-- <div class="col-5_lg-6_sm-12 padded-2">
 		
 		<h3 class="text-feat"> matresses. </h3>
 		<div class="grid">	
@@ -92,11 +112,11 @@ products2:
 				<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus. </p>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!------------------------------------ second column regular----------------------------------- -->
 
-	  <div class="col-5_lg-6_sm-12 padded-2">
+	  <!-- <div class="col-5_lg-6_sm-12 padded-2">
 
 		<h3 class="text-feat"> pillows. </h3>
 		<div class="grid">
@@ -131,8 +151,8 @@ products2:
 				<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima tempora id aliquam necessitatibus. </p>
 			</div>
 	   </div>
-	 </div> 
-	</section>
+	 </div>  -->
+	
 
 		<!---------- image banner ---------->
 		<section class="padded-md grid-center hide-xs">
